@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">VoicePilot</string>
+    <string name="accessibility_service_description">
+        VoicePilot provides user-authorized hands-free voice navigation and accessibility controls.
+    </string>
+</resources>
