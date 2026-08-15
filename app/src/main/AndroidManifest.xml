@@ -40,9 +40,10 @@
 
         </service>
 
-        <service
-            android:name=".service.VoicePilotService"
-            android:exported="false" />
+       <service
+    android:name=".service.VoicePilotService"
+    android:exported="false"
+    android:foregroundServiceType="microphone" />
 
     </application>
 
