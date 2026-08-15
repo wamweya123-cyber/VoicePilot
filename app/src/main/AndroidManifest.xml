@@ -22,21 +22,26 @@
             </intent-filter>
 
         </activity>
-<service
-    android:name=".VoicePilotAccessibilityService"
-    android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
-    android:exported="true"
-    android:label="VoicePilot">
+        <service
+            android:name=".VoicePilotAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true"
+            android:label="VoicePilot">
 
-    <intent-filter>
-        <action android:name="android.accessibilityservice.AccessibilityService" />
-    </intent-filter>
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
 
-    <meta-data
-        android:name="android.accessibilityservice"
-        android:resource="@xml/accessibility_service_config" />
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
 
-</service>
+        </service>
+
+        <service
+            android:name=".service.VoicePilotService"
+            android:exported="false" />
+
     </application>
 
 </manifest>
