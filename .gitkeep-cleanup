@@ -1,0 +1,4 @@
+# This file marks the cleanup of duplicate nested directories
+# The following corrupted paths have been removed:
+# - app/src/main/java/com/voicepilot/app/app/ (entire nested structure)
+# - app/src/main/res/values/app/src/ (entire nested structure)
